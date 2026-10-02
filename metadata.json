@@ -1,0 +1,7 @@
+{
+  "name": "BENGKEL PRO",
+  "description": "Sistem Pengurusan Bengkel & Inventori moden untuk pengurusan tools, alat ganti, minyak dan stok bengkel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
