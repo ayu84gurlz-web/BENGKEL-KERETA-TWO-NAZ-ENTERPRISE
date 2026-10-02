@@ -12,6 +12,12 @@ import {
   Image as ImageIcon
 } from 'lucide-react';
 import { InventoryItem, ItemCategory } from '../../types';
+import { 
+  heroBayImg, 
+  impactWrenchImg, 
+  brakeSystemImg, 
+  motorOilImg 
+} from '../../assets/images';
 
 interface AddEditItemModalProps {
   isOpen: boolean;
@@ -53,12 +59,12 @@ const COMMON_UNITS = [
   'gulung',
 ];
 
-// Presets with generated real workshop photos
+// Presets with bundled real workshop photos
 const PRESET_IMAGES = [
-  { label: 'Impact Wrench', url: '/src/assets/images/tool_impact_wrench_1790907379274.jpg' },
-  { label: 'Brake Disc & Pad', url: '/src/assets/images/part_brake_system_1790907390013.jpg' },
-  { label: 'Engine Oil & Filter', url: '/src/assets/images/fluid_motor_oil_1790907400940.jpg' },
-  { label: 'Bengkel Workshop Bay', url: '/src/assets/images/hero_bengkel_bay_1790907365264.jpg' },
+  { label: 'Impact Wrench', url: impactWrenchImg },
+  { label: 'Brake Disc & Pad', url: brakeSystemImg },
+  { label: 'Engine Oil & Filter', url: motorOilImg },
+  { label: 'Bengkel Workshop Bay', url: heroBayImg },
 ];
 
 export const AddEditItemModal: React.FC<AddEditItemModalProps> = ({

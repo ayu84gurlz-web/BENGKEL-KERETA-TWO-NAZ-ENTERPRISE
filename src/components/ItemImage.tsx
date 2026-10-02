@@ -14,6 +14,7 @@ import {
   Sliders
 } from 'lucide-react';
 import { InventoryItem } from '../types';
+import { resolveAssetImage } from '../assets/images';
 
 interface ItemImageProps {
   item: InventoryItem;
@@ -27,6 +28,7 @@ export const ItemImage: React.FC<ItemImageProps> = ({
   size = 'md' 
 }) => {
   const [imageError, setImageError] = useState(false);
+  const resolvedSrc = resolveAssetImage(item.image);
 
   const sizeClasses = {
     sm: 'h-12 w-12 text-xs',
@@ -36,11 +38,11 @@ export const ItemImage: React.FC<ItemImageProps> = ({
   };
 
   // If item has a valid image and no error has occurred, show the image with fallback
-  if (item.image && !imageError) {
+  if (resolvedSrc && !imageError) {
     return (
       <div className={`relative overflow-hidden rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center group ${sizeClasses[size]} ${className}`}>
         <img
-          src={item.image}
+          src={resolvedSrc}
           alt={item.name}
           referrerPolicy="no-referrer"
           onError={() => setImageError(true)}

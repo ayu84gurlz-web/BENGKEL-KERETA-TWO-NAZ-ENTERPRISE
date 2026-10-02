@@ -20,6 +20,7 @@ import {
 import { InventoryItem, StockTransaction } from '../types';
 import { formatCurrency, formatStock, getStockStatus } from '../utils/format';
 import { ItemImage } from './ItemImage';
+import { heroBayImg } from '../assets/images';
 
 interface DashboardViewProps {
   items: InventoryItem[];
@@ -160,7 +161,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
       <div className="relative overflow-hidden rounded-2xl border border-slate-800 bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 p-6 sm:p-8 shadow-xl">
         <div className="absolute right-0 top-0 bottom-0 w-1/2 opacity-25 hidden md:block pointer-events-none">
           <img
-            src="/src/assets/images/hero_bengkel_bay_1790907365264.jpg"
+            src={heroBayImg}
             alt="Bengkel Pro Bay"
             className="w-full h-full object-cover object-center"
           />

@@ -1,4 +1,5 @@
 import { InventoryItem, StockTransaction, WorkshopSettings } from '../types';
+import { impactWrenchImg, brakeSystemImg, motorOilImg } from '../assets/images';
 
 export const DEFAULT_SETTINGS: WorkshopSettings = {
   workshopName: 'TWO NAZ ENTERPRISE',
@@ -24,7 +25,7 @@ export const INITIAL_ITEMS: InventoryItem[] = [
     carModel: 'Universal',
     storageLocation: 'Kabinet Alatan 1 - Rak A',
     notes: 'Tork tinggi 950Nm dengan 2x bateri lithium 20V & pengecas pantas.',
-    image: '/src/assets/images/tool_impact_wrench_1790907379274.jpg',
+    image: impactWrenchImg,
     svgIconType: 'impact_wrench',
     totalUsage: 45,
     lastUpdated: '2026-09-28T10:30:00Z',
@@ -187,7 +188,7 @@ export const INITIAL_ITEMS: InventoryItem[] = [
     carModel: 'Proton',
     storageLocation: 'Rak Komponen Brek A-01',
     notes: 'Sesuai Proton Persona, Iriz, Saga VVT & Exora. Kurang habuk haba tinggi.',
-    image: '/src/assets/images/part_brake_system_1790907390013.jpg',
+    image: brakeSystemImg,
     svgIconType: 'brake_pad',
     totalUsage: 56,
     lastUpdated: '2026-09-30T09:15:00Z',
@@ -252,7 +253,7 @@ export const INITIAL_ITEMS: InventoryItem[] = [
     carModel: 'Toyota',
     storageLocation: 'Rak Logam Berat Brek A-04',
     notes: 'Sepasang piring brek berventilasi depan untuk Vios NCP93/NCP150 & Yaris.',
-    image: '/src/assets/images/part_brake_system_1790907390013.jpg',
+    image: brakeSystemImg,
     svgIconType: 'brake_disc',
     totalUsage: 28,
     lastUpdated: '2026-09-24T12:00:00Z',
@@ -383,7 +384,7 @@ export const INITIAL_ITEMS: InventoryItem[] = [
     carModel: 'Universal',
     storageLocation: 'Rak Minyak Pelincir Utama M-01',
     notes: 'Molekul pintar perlindungan serta-merta semasa enjin dihidupkan.',
-    image: '/src/assets/images/fluid_motor_oil_1790907400940.jpg',
+    image: motorOilImg,
     svgIconType: 'engine_oil',
     totalUsage: 178,
     lastUpdated: '2026-10-01T09:00:00Z',
